@@ -1,0 +1,14 @@
+﻿<Window x:Class="ConnectedMode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <StackPanel>
+        <Label>Faculty:</Label>
+        <ComboBox Name="facultiesCmBox" SelectionChanged="facultiesCmBox_SelectionChanged" ></ComboBox>
+        <Label>Group:</Label>
+        <ComboBox Name="groupsCmBox" SelectionChanged="groupsCmBox_SelectionChanged"></ComboBox>
+        <Label>Student:</Label>
+        <ListBox Name="studentsListBox" Background="AliceBlue"></ListBox>
+        <TextBlock Name="CountStudentsTxtBlock" Foreground="Red"></TextBlock>
+    </StackPanel>
+</Window>
